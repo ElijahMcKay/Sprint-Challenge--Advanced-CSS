@@ -1,1 +1,16 @@
-// Mixins Here
+//===================== Mixins ===========================
+
+.home-color {
+    background: darken(white, 5%); 
+}
+
+// ==================== Parametric Mixins =====================
+
+.button-maker(@background, @border-radius, @tb-padding, @lr-padding) {
+    border-radius: @border-radius;
+    padding: @tb-padding @lr-padding; 
+    background: @background;  
+    color: white; 
+    font-size: 2rem; 
+    text-align: center; 
+}
